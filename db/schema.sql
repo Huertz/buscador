@@ -26,4 +26,4 @@ CREATE TABLE employee(
     last_name VARCHAR(30),
     manager_id INT, 
     role_id INT,
-)
+);
