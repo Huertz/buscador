@@ -1,0 +1,26 @@
+{
+  "name": "buscador",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Huertz/buscador.git"
+  },
+  "author": "Huertz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Huertz/buscador/issues"
+  },
+  "homepage": "https://github.com/Huertz/buscador#readme",
+  "dependencies": {
+    "asciiart-logo": "^0.2.7",
+    "console.table": "^0.10.0",
+    "inquirer": "^8.2.4",
+    "mysql2": "^3.0.1"
+  }
+}
