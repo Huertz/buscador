@@ -9,3 +9,13 @@ VALUES ("Sales"),
 INSERT INTO role (title, salary department)
 VALUES ("Lead Engineer", 150000, 2);
        ("Legal Team Lead", 250000, 4);
+
+-- employee seed
+INSERT INTO employee (first_name, last_name, manager_id, role_id)
+VALUES ("Lionel", "Messi", null, 1);
+       ("Cristiano", "Ronaldo", null, 2);
+       ("Sergio", "Ramos", null, 3);
+       ("Andres", "Iniesta", 1, 4);
+       ("Andriy", "Shevchenko", 4, 5);
+       ("Antoine", "Griezmann", 1, 6);
+       ("Eden", "Hazard", 2, 7);
