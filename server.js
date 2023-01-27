@@ -133,3 +133,9 @@ function selectManager() {
   })
   return managersArr;
 }
+
+// update employee
+
+// add employee role
+
+// add department
