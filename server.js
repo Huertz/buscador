@@ -4,17 +4,15 @@ const mysql = require('mysql');
 require('console.table');
 const main = require('asciiart-logo');
 
-const connection = mysql.createConnection(
-    {
-      host: 'localhost',
-      // MySQL username
-      user: 'root',
-      // TODO: Add your MySQL password here
-      password: 'Huerta95',
-      database: 'employee_trackerdb'
-    },
-    console.log(`Connected to the employee_trackerdb database.`)
-  );
+const connection = mysql.createConnection({
+  host: "localhost",
+  port: 3306,
+  user: "root",
+  password: "Huerta95",
+  database: "employee_trackerdb"
+},
+console.log(`Connected to the employee_trackerdb database.`)
+);
 
   // connection
 connection.connect(function(err) {
