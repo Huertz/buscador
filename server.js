@@ -226,3 +226,13 @@ function addEmployee() {
 
 // add department
 
+function addDepartment() {
+  inquirer.prompt([
+    {
+      name: 'name',
+      type: 'input',
+      message: 'Add a department'
+    }
+  ])
+}
+
