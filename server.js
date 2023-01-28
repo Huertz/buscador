@@ -233,6 +233,18 @@ function addDepartment() {
       type: 'input',
       message: 'Add a department'
     }
-  ])
+  ]).then(function(res) {
+    var query = connection.query(
+      'INSERT INTO department',
+      {
+        name: name
+      },
+      function(err) {
+        if(err) throw err 
+        console.table(res);
+        startPrompt();
+      }
+    )
+  })
 }
 
