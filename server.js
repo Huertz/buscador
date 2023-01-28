@@ -135,18 +135,17 @@ function selectManager() {
 }
 
 // add employee
-
 function addEmployee() { 
   inquirer.prompt([
       {
         name: "firstname",
         type: "input",
-        message: "Enter their first name "
+        message: "Enter first name "
       },
       {
         name: "lastname",
         type: "input",
-        message: "Enter their last name "
+        message: "Enter last name "
       },
       {
         name: "role",
@@ -157,7 +156,7 @@ function addEmployee() {
       {
           name: "choice",
           type: "rawlist",
-          message: "Whats their managers name?",
+          message: "Managers name?",
           choices: selectManager()
       }
   ]).then(function (val) {
@@ -179,14 +178,51 @@ function addEmployee() {
 })
 }
 
-// update employee role
-
+// update employee 
 // function updateEmployee() {
 //   connection.query("SELECT employee.last_name, role.title FROM employee JOIN role ON employee.role_id = role.id;", function(err, res) {
-  // // console.log(res)
-  //  if (err) throw err
-  //  console.log(res)
-  // inquirer.prompt([
-  //       {
+//    if (err) throw err
+//    console.log(res)
+//   inquirer.prompt([
+//         {
+//           name: "lastName",
+//         type: "rawlist",
+//         choices: function() {
+//           var lastName = [];
+//           for (var i = 0; i < res.length; i++) {
+//             lastName.push(res[i].last_name);
+//           }
+//           return lastName;
+//         },
+//         message: "Employee last name? ",
+//       },
+//       {
+//         name: "role",
+//         type: "rawlist",
+//         message: "Employee new title? ",
+//         choices: selectRole()
+//       },
+//   ]).then(function(val) {
+//     var roleId = selectRole().indexOf(val.role) + 1
+//     connection.query("UPDATE employee SET WHERE ?", 
+//     {
+//       last_name: val.lastName
+       
+//     }, 
+//     {
+//       role_id: roleId
+       
+//     }, 
+//     function(err){
+//         if (err) throw err
+//         console.table(val)
+//         startPrompt()
+//     })
+
+// });
+// });
+
+// }
 
 // add department
+
