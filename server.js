@@ -39,7 +39,7 @@ function initPrompt() {
     choices: [
               "View All Employees?", 
               "View All Employee's By Roles?",
-              "View all Emplyees By Deparments", 
+              "View All Emplyees By Deparments", 
               "Update Employee",
               "Add Employee?",
               "Add Role?",
