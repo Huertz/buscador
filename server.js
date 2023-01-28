@@ -134,7 +134,7 @@ function selectManager() {
   return managersArr;
 }
 
-// update employee
+// add employee
 
 function addEmployee() { 
   inquirer.prompt([
@@ -179,6 +179,6 @@ function addEmployee() {
 })
 }
 
-// add employee role
+// update employee role
 
 // add department
