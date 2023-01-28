@@ -34,6 +34,12 @@ After all dependecies are installed
 
 Run the command npm run start or node server.js
 
+## Usage
+
+  [Website link](https://github.com/Huertz/buscador)
+
+ [alt text](./media/employee.png)
+
 
 ## Accepted Criteria
 
@@ -68,8 +74,6 @@ THEN I am prompted to enter the employee’s first name, last name, role, and ma
 WHEN I choose to update an employee role
 
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database
-## Usage
-
 
 ## Credits
 
@@ -77,7 +81,7 @@ If you used any third-party assets that require attribution, list the creators w
 
 [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-[Mongodb](https://www.mongodb.com/home)
+[Mysql](https://www.mysql.com/)
 
 ## License
 
