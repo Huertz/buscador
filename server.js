@@ -224,8 +224,9 @@ function updateEmployee() {
 
 }
 
-// add department
+// add employee role
 
+// add department
 function addDepartment() {
   inquirer.prompt([
     {
