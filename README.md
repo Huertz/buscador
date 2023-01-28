@@ -36,9 +36,10 @@ Run the command npm run start or node server.js
 
 ## Usage
 
-  [Website link](https://github.com/Huertz/buscador)
+  [Github](https://github.com/Huertz/buscador)
 
- [alt text](./media/employee.png)
+  `assets/images`
+   ![](./media/employee.png)
 
 
 ## Accepted Criteria
