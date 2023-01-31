@@ -255,6 +255,7 @@ function addRole() {
   });
 });
 }
+
 // add department
 function addDepartment() {
   inquirer.prompt([
@@ -265,7 +266,7 @@ function addDepartment() {
     }
   ]).then(function(res) {
     var query = connection.query(
-      "INSERT INTO department",
+      "INSERT INTO department SET ?",
       {
         name: res.name
       },
