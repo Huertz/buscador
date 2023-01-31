@@ -225,22 +225,22 @@ function updateEmployee() {
 }
 
 // add employee role
-function addRole(){
-  connection.query('SELECT role.title AS Title, role.salary AS Salary FROM role'), function(err, res) {
+function addRole() { 
+  connection.query("SELECT role.title AS Title, role.salary AS Salary FROM role",   function(err, res) {
     inquirer.prompt([ 
       {
-        name: 'name',
-        type: 'input',
-        message: 'Add a role'
+        name: "Title",
+        type: "input",
+        message: "Add a role"
       },
       {
-        name: 'Salary',
-        type: 'input',
-        message: 'What is the salary?'
+        name: "Salary",
+        type: "input",
+        message: "What is the salary?"
       }
     ]).then(function(res) {
       connection.query(
-          'INSERT INTO role SET ?',
+          "INSERT INTO role SET ?",
           {
             title: res.Title,
             salary: res.Salary,
@@ -259,13 +259,13 @@ function addRole(){
 function addDepartment() {
   inquirer.prompt([
     {
-      name: 'name',
-      type: 'input',
-      message: 'Add a department'
+      name: "name",
+      type: "input",
+      message: "Add a department"
     }
   ]).then(function(res) {
     var query = connection.query(
-      'INSERT INTO department',
+      "INSERT INTO department",
       {
         name: res.name
       },
