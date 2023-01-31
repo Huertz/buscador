@@ -29,7 +29,7 @@ function init() {
   console.log(mainText);
 }
 
-// init prompt
+// init prompt not startPrompt
 function initPrompt() {
     inquirer.prompt([
     {
@@ -172,7 +172,7 @@ function addEmployee() {
     }, function(err){
         if (err) throw err
         console.table(val)
-        startPrompt()
+        initPrompt()
     })
 
 })
@@ -216,7 +216,7 @@ function updateEmployee() {
     function(err){
         if (err) throw err
         console.table(val)
-        startPrompt()
+        initPrompt()
     })
 
 });
@@ -248,7 +248,7 @@ function addRole() {
           function(err) {
               if (err) throw err
               console.table(res);
-              startPrompt();
+              initPrompt();
           }
       )
 
@@ -272,7 +272,7 @@ function addDepartment() {
       function(err) {
         if(err) throw err 
         console.table(res);
-        startPrompt();
+        initPrompt();
       }
     )
   })
